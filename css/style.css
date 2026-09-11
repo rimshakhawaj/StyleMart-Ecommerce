@@ -231,6 +231,125 @@ header{
 }
 
 
+
+/** Priduct Section **/
+
+.products {
+    padding: 80px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease box-shadow 0.3s ease;
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    padding: 7px 10px;
+    background-color: #e91e63;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.product-badge.new {
+    background-color: #222222;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 320px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+.product-category {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-rating {
+    color: #f5a623;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.old-price {
+    color: #999999;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.new-price {
+    color: #222222;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    background-color: #222222;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #e91e63;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+
 @media (max-width:768px) {
     .navbar{
         flex-direction:column;
@@ -265,7 +384,17 @@ header{
     .category-card img {
         height: 220px;
     }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products {
+        padding: 60px 0;
+    }
+    .product-image img {
+        height: 260px;
+    }
 }
+
 
 @media (max-width: 480px) {
     .category-grid{
@@ -277,6 +406,10 @@ header{
     .category-card img {
         height: 240px;
     }
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-image img {
+        height: 300px;
+    }
 }
-
-
