@@ -470,6 +470,121 @@ header{
 }
 
 
+/** Newsletter Section **/
+
+.newsletter {
+    padding: 80px 0;
+    background-color: #222222;
+}
+
+.newsletter-content {
+    /* width: 850px; */
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-text {
+    margin-bottom: 30px;
+}
+
+.newsletter-subtitle {
+    color: #e91e63;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.newsletter-text h2 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.newsletter-text > p:last-child {
+    color: #cccccc;
+    font-size: 16px;
+    max-width: 650px;
+    margin: 0 auto;
+    /* line-height: 1.6px; */
+}
+
+
+.newsletter-form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    flex: 1;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #999999;
+}
+
+.form-group input:focus {
+    border-color: #e91e63;
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.15);
+}
+
+.newsletter-button {
+    height: 50px;
+    padding: 0 24px;
+    border:none;
+    border-radius: 6px;
+    background-color: #e91e63;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease transform 0.3s ease;
+}
+
+.newsletter-button:hover {
+    background-color: #c2185b;
+    transform: translateY(-2px);
+}
+
+.newsletter-note {
+    color: #aaaaaa;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top:18px;
+} 
+
+
 @media (max-width:768px) {
     .navbar{
         flex-direction:column;
@@ -531,6 +646,22 @@ header{
     .feature-card {
         padding: 30px 20px;
     }
+    .newsletter {
+        padding: 60px 0;
+    }
+    .newsletter-text h2 {
+        font-size: 34px;
+    }
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .newsletter-button {
+        width: 100%;
+    }
 }
 
 
@@ -572,4 +703,18 @@ header{
     .features {
         padding: 50px 0;
     }
+    .newsletter {
+        padding: 50px 0;
+    }
+    .newsletter-text h2 {
+        font-size: 30px;
+    }
+    .newsletter-text > p:last-child {
+        font-size: 15px;
+    }
+    .newslette-button {
+        height: 48px;
+    }
 }
+
+
